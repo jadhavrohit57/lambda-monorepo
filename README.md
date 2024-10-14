@@ -13,6 +13,10 @@ Implementaion of monorepo using lambda workspaces. Includes packages of lambda-f
     
     - to test lambda function using serverless-offline run cmd "yarn workspace infrastructure run sls-off". Then go to http://localhost:3000/dev/test
     ![sls-off](public/sls-off.png)
+
+    <p>
+        <img src="public/sls-off.png">
+    </p>
     
     - To open Swagger documentaion run cmd "yarn workspace lambda-functions run swagger".
     for swagger go to http://localhost:3001/api-docs
@@ -30,4 +34,9 @@ Implementaion of monorepo using lambda workspaces. Includes packages of lambda-f
     ![lambda-view](public/lambda.png)
 
     - Test example
-    ![api](public/api-gateway.png)
+    ![api](https://github.com/jadhavrohit57/lambda-monorepo/blob/main/public/api-gateway.png)
+
+    
+    <p>
+        <img src="https://github.com/jadhavrohit57/lambda-monorepo/blob/main/public/api-gateway.png">
+    </p>
