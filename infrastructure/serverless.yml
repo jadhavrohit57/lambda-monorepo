@@ -1,0 +1,36 @@
+service: lambda-functions
+
+frameworkVersion: 3
+
+plugins:
+  - serverless-plugin-monorepo
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+
+custom:
+  serverless-offline:
+    httpPort: 3000
+
+functions:
+  hello-name:
+    handler: ../lambda-functions/dist/index.handler
+    events:
+      - http:
+          path: test
+          method: get
+          request:
+            parameters:
+              querystrings:
+                name: false
+package:
+  individually: true
+  exclude:
+    - '**/*'
+  include:
+    - '../lambda-functions/dist/**'
+    - '!node_modules/**'
+    - '!**/architecture-setup/**'
