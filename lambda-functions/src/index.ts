@@ -1,5 +1,5 @@
 
-import { APIGatewayProxyEvent, APIGatewayProxyResultV2, Context, Handler } from "aws-lambda"
+import { APIGatewayProxyEvent, APIGatewayProxyResultV2 } from "aws-lambda"
 
 /**
  * @swagger
