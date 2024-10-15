@@ -1,6 +1,6 @@
 # lambda-monorepo
 
-Implementaion of monorepo using lambda workspaces. Includes packages of lambda-functions and serverless infrastructure code for lambda functions deployment.
+Implementaion of monorepo using yarn workspaces. Includes packages of lambda-functions and serverless infrastructure code for lambda functions deployment.
 
 ## For linting
     - Run cmd "yarn lint"
